@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         myClickHandler = new MyClickHandler(this);
         activityMainBinding.setClickHandler(myClickHandler);
 
+        // Two way Binding
+
+
 
     }
 }
