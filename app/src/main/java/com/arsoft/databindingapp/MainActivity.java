@@ -14,6 +14,7 @@ import com.arsoft.databindingapp.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding activityMainBinding;
+    private MyClickHandler myClickHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         );
 
         activityMainBinding.setPerson(p1);
+
+        // Binding the Handler for Click Events
+        myClickHandler = new MyClickHandler(this);
+        activityMainBinding.setClickHandler(myClickHandler);
 
 
     }
